@@ -4,7 +4,7 @@ const useReview = () => {
     const [review, setReview] = useState([]);
     useEffect(() => {
         fetch('fakedb.json')
-            .then(res => res.json)
+            .then(res => res.json())
             .then(data => setReview(data));
     }, []);
     return [review, setReview];

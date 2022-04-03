@@ -1,6 +1,9 @@
 import React from 'react';
+import useReview from '../../Hooks/useReview';
+import Review from '../Review/Review';
 
 const Home = () => {
+    const [review, setReview] = useReview();
     return (
         <div className='md:px-16 py-8'>
             <div className='grid items-center w-full grid-cols-1 gap-10 mx-auto md:w-4/5 lg:grid-cols-2 xl:gap-32'>
@@ -19,6 +22,16 @@ const Home = () => {
             </div>
             <div>
                 <h1 className='mt-40 mb-24 text-2xl font-extrabold leading-tight tracking-tight text-gray-900 md:text-4xl text-center'>Customer Review</h1>
+            </div>
+            <div className='px-4 pt-20 pb-24 mx-auto max-w-7xl md:px-2'>
+                <div className='grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 justify-items-center'>
+                    {
+                        review.map(singleReview => <Review
+                            key={singleReview.id}
+                            singleReview={singleReview}
+                        ></Review>)
+                    }
+                </div>
             </div>
         </div>
     );
