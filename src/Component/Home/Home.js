@@ -31,8 +31,12 @@ const Home = () => {
                             singleReview={singleReview}
                         ></Review>)
                     }
+                    <button className='w-full mb-2 py-2 px-3 text-white mt-3 mx-2 bg-blue-900 sm:w-auto sm:mb-0 '>
+                        Show More
+                    </button>
                 </div>
             </div>
+
         </div>
     );
 };

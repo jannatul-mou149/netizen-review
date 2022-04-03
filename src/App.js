@@ -5,7 +5,7 @@ import About from './Component/About/About'
 import Header from './Component/Header/Header';
 import NotFound from './Component/NotFound/NotFound';
 import Footer from './Component/Footer/Footer';
-import Review from './Component/Review/Review';
+import Reviews from './Component/Reviews/Reviews';
 import Dashboard from './Component/Dashboard/Dashboard';
 import Blogs from './Component/Blogs/Blogs';
 function App() {
@@ -15,7 +15,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/home' element={<Home />}></Route>
-        <Route path='/review' element={<Review />}></Route>
+        <Route path='/reviews' element={<Reviews />}></Route>
         <Route path='/dashboard' element={<Dashboard />}></Route>
         <Route path='/blogs' element={<Blogs />}></Route>
         <Route path='/about' element={<About />}></Route>
