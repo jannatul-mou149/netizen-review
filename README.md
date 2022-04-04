@@ -1,10 +1,11 @@
-# BOOK STORE
+# Netizen Review
 
-Live Site: [Click here](https://book-store-barsha.netlify.app/)
+Live Site: [Click here]()
+Repo Link: [Click here](https://github.com/programming-hero-web-course-4/product-analysis-website-jannatul-mou149)
 
 
-## Website Description: ##
- - A project of an Online Book Store
- - There's a blog page. You can check out our blogs in there
- - We have shown some of our customer reviews
- - You can buy books from this book store
+## Project Description: ##
+ - This is a Review Website Created with React
+ - This project includes React Routing and designed with Tailwind
+ - This project also includes Custom Hook
+ - Rechart is used in this project too
