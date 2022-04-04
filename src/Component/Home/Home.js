@@ -1,9 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import useReview from '../../Hooks/useReview';
 import Review from '../Review/Review';
 
 const Home = () => {
     const [review, setReview] = useReview();
+    const navigate = useNavigate();
+    const showMore = () => {
+        navigate('/reviews');
+    }
     return (
         <div className='md:px-16 py-8'>
             <div className='grid items-center w-full grid-cols-1 gap-10 mx-auto md:w-4/5 lg:grid-cols-2 xl:gap-32'>
@@ -26,12 +31,12 @@ const Home = () => {
             <div className='px-4 pt-20 pb-24 mx-auto max-w-7xl md:px-2'>
                 <div className='grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 justify-items-center'>
                     {
-                        review.map(singleReview => <Review
+                        review.slice(0, 3).map(singleReview => <Review
                             key={singleReview.id}
                             singleReview={singleReview}
                         ></Review>)
                     }
-                    <button className='w-full mb-2 py-2 px-3 text-white mt-3 mx-2 bg-blue-900 sm:w-auto sm:mb-0 '>
+                    <button onClick={showMore} className='w-full mb-2 py-2 px-3 text-white mt-3 mx-2 bg-blue-900 sm:w-auto sm:mb-0 '>
                         Show More
                     </button>
                 </div>
