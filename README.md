@@ -1,6 +1,6 @@
 # Netizen Review
 
-Live Site: [Click here]()
+Live Site: [Click here](https://jannatul-mou-react-router.netlify.app/)
 Repo Link: [Click here](https://github.com/programming-hero-web-course-4/product-analysis-website-jannatul-mou149)
 
 
