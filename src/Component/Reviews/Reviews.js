@@ -7,7 +7,7 @@ const Reviews = () => {
     return (
         <div>
             <div>
-                <h1 className='mt-4 mb-4 text-2xl font-extrabold leading-tight tracking-tight text-gray-900 md:text-4xl text-center'>Customer Review</h1>
+                <h1 className='mt-4 mb-4 text-2xl font-extrabold text-blue-500 md:text-4xl text-center'>Customer Review</h1>
             </div>
             <div className='px-4 pt-20 pb-24 mx-auto max-w-7xl md:px-2'>
                 <div className='grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 justify-items-center mb-40'>
